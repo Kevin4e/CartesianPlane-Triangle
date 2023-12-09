@@ -10,7 +10,7 @@
  - Huge numbers will lead to an abnormal program status.
 
 ## Interface
-[image](https://github.com/Kevin4e/CartesianPlane-Triangle/assets/123682082/0c939879-38ab-4549-950f-e9e210acfc75)
+![image](https://github.com/Kevin4e/CartesianPlane-Triangle/assets/123682082/0c939879-38ab-4549-950f-e9e210acfc75)
 
 ## Troubleshooting
  1. **When I type "yes" or something similar the program will end without showing the process.**
