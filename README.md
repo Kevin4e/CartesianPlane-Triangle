@@ -14,6 +14,7 @@
 
 ## Troubleshooting
  1. **When I type "yes" or something similar the program will end without showing the process.**
+
     This is because the program was written to make only "yes/Yes/YES" valid.
     
     
