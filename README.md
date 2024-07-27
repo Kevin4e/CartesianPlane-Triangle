@@ -13,7 +13,7 @@
 ![image](https://github.com/Kevin4e/CartesianPlane-Triangle/assets/123682082/0c939879-38ab-4549-950f-e9e210acfc75)
 
 ## Troubleshooting
- 1. **When I type "yes" or something similar the program will end without showing the process.**
+ 1. **When I confirm to see the process the program will end without showing it.**
 
     This is because the program was written to make only "yes/Yes/YES" valid.
     
