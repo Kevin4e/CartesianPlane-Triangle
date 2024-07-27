@@ -2,8 +2,6 @@
 #include <cmath>
 #include <iomanip>
 
-using namespace std;
-
 int main()
 {
     // Variable Declaration //
@@ -15,17 +13,17 @@ int main()
 
     // Title & Variable Assignments //
 
-    cout << "Calculator of the perimeter and area of a triangle on a cartesian plane!" << endl;
-    cout << "" << endl;
+    std::cout << "Calculator of the perimeter and area of a triangle on a cartesian plane!" << std::endl;
+    std::cout << "" << endl;
 
-    cout << "Enter the coordinates of point A (x,y):" << endl;
-    cin >> xa >> ya;
+    std::cout << "Enter the coordinates of point A (x,y):" << std::endl;
+    std::cin >> xa >> ya;
 
-    cout << "Enter the coordinates of point B (x,y):" << endl;
-    cin >> xb >> yb;
+    std::cout << "Enter the coordinates of point B (x,y):" << std::endl;
+    std::cin >> xb >> yb;
 
-    cout << "Enter the coordinates of point C (x,y):" << endl;
-    cin >> xc >> yc;
+    std::cout << "Enter the coordinates of point C (x,y):" << std::endl;
+    std::cin >> xc >> yc;
 
 
 
@@ -73,87 +71,83 @@ int main()
 
     // Unknowns' Result & Triangle C.E.//
 
-    cout << "" << endl;
+    std::cout << "" << endl;
 
-    if (((xa == xb) && (ya == yb)) || ((xb == xc) && (yb == yc)) || ((xa == xc) && (ya == yc)))
-    {
-     cout << "The triangle does not exist: 2 or 3 vertices are on the same point." << endl;
+    if (((xa == xb) && (ya == yb)) || ((xb == xc) && (yb == yc)) || ((xa == xc) && (ya == yc))){
+     std::cout << "The triangle does not exist: 2 or 3 vertices are on the same point." << std::endl;
      return 0;
     }
 
-    else if (a == 0)
-    {
-     cout << "The triangle does not exist: all vertices are aligned with each other." << endl;
+    else if (a == 0){
+     std::cout << "The triangle does not exist: all vertices are aligned with each other." << std::endl;
      return 0;
     }
 
-    else
-    {
-     cout << "The perimeter is: " << fixed << setprecision(2) << p << endl;
-     cout << "The area is: " << fixed << setprecision(2) << a << endl;
+    else {
+     std::cout << "The perimeter is: " << fixed << setprecision(2) << p << std::endl;
+     std::cout << "The area is: " << fixed << setprecision(2) << a << std::endl;
     }
 
-    cout << "" << endl;
+    std::cout << "" << std::endl;
 
 
 
     // Willingness to show the process carried out //
 
-    cout << "Want to see the process?" << endl;
-    cin >> choice;
-    cout << "" << endl;
+    std::cout << "Want to see the process?" << std::endl;
+    std::cin >> choice;
+    std::cout << "" << std::endl;
 
-    if (choice == "yes" || choice == "Yes" || choice == "YES")
-    {
-     cout << "Calculation of Delta's, the difference of 2 points on the same axis:" << endl;
-     cout << "" << endl;
-     cout << "Dxab = xa - xb = " << xa << " - " << xb << " = " << dxab << endl;
-     cout << "Dyab = ya - yb = " << ya << " - " << yb << " = " << dyab << endl;
-     cout << "Dxbc = xb - xc = " << xb << " - " << xc << " = " << dxbc << endl;
-     cout << "Dybc = yb - yc = " << yb << " - " << yc << " = " << dybc << endl;
-     cout << "Dxac = xa - xc = " << xa << " - " << xc << " = " << dxac << endl;
-     cout << "Dyac = ya - yc = " << ya << " - " << yc << " = " << dyac << endl;
+    if (choice == "yes" || choice == "Yes" || choice == "YES"){
+     std::cout << "Calculation of Delta's, the difference of 2 points on the same axis:" << std::endl;
+     std::cout << "" << std::endl;
+     std::cout << "Dxab = xa - xb = " << xa << " - " << xb << " = " << dxab << std::endl;
+     std::cout << "Dyab = ya - yb = " << ya << " - " << yb << " = " << dyab << std::endl;
+     std::cout << "Dxbc = xb - xc = " << xb << " - " << xc << " = " << dxbc << std::endl;
+     std::cout << "Dybc = yb - yc = " << yb << " - " << yc << " = " << dybc << std::endl;
+     std::cout << "Dxac = xa - xc = " << xa << " - " << xc << " = " << dxac << std::endl;
+     std::cout << "Dyac = ya - yc = " << ya << " - " << yc << " = " << dyac << std::endl;
 
-     cout << "" << endl;
-     cout << "" << endl;
+     std::cout << "" << std::endl;
+     std::cout << "" << std::endl;
 
-     cout << "" << endl;
-     cout << "Calculation of the distances AB, BC and AC:" << endl;
-     cout << "sqrt = square root" << endl;
-     cout << "" << endl;
-     cout << "AB = sqrt(Dxab^2 + Dyab^2) = " << "sqrt((" << dxab << ")^2" << " + " << "(" << dyab << ")^2)" << " = " << "sqrt(" << pow(dxab,2) << " + " << pow(dyab,2) << ")" << " = " << "sqrt(" << pow(dxab,2) + pow(dyab,2) << ")" << " = " << ab << endl;
-     cout << "" << endl;
-     cout << "BC = sqrt(Dxbc^2 + Dybc^2) = " << "sqrt((" << dxbc << ")^2" << " + " << "(" << dybc << ")^2)" << " = " << "sqrt(" << pow(dxbc,2) << " + " << pow(dybc,2) << ")" << " = " << "sqrt(" << pow(dxbc,2) + pow(dybc,2) << ")" << " = " << bc << endl;
-     cout << "" << endl;
-     cout << "AC = sqrt(Dxac^2 + Dyac^2) = " << "sqrt((" << dxac << ")^2" << " + " << "(" << dyac << ")^2)" << " = " << "sqrt(" << pow(dxac,2) << " + " << pow(dyac,2) << ")" << " = " << "sqrt(" << pow(dxac,2) + pow(dyac,2) << ")" << " = " << ac << endl;
+     std::cout << "" << std::endl;
+     std::cout << "Calculation of the distances AB, BC and AC:" << endl;
+     std::cout << "sqrt = square root" << endl;
+     std::cout << "" << endl;
+     std::cout << "AB = sqrt(Dxab^2 + Dyab^2) = " << "sqrt((" << dxab << ")^2" << " + " << "(" << dyab << ")^2)" << " = " << "sqrt(" << pow(dxab,2) << " + " << pow(dyab,2) << ")" << " = " << "sqrt(" << pow(dxab,2) + pow(dyab,2) << ")" << " = " << ab << std::endl;
+     std::cout << "" << endl;
+     std::cout << "BC = sqrt(Dxbc^2 + Dybc^2) = " << "sqrt((" << dxbc << ")^2" << " + " << "(" << dybc << ")^2)" << " = " << "sqrt(" << pow(dxbc,2) << " + " << pow(dybc,2) << ")" << " = " << "sqrt(" << pow(dxbc,2) + pow(dybc,2) << ")" << " = " << bc << std::endl;
+     std::cout << "" << endl;
+     std::cout << "AC = sqrt(Dxac^2 + Dyac^2) = " << "sqrt((" << dxac << ")^2" << " + " << "(" << dyac << ")^2)" << " = " << "sqrt(" << pow(dxac,2) << " + " << pow(dyac,2) << ")" << " = " << "sqrt(" << pow(dxac,2) + pow(dyac,2) << ")" << " = " << ac << std::endl;
 
-     cout << "" << endl;
-     cout << "" << endl;
-     cout << "" << endl;
+     std::cout << "" << std::endl;
+     std::cout << "" << std::endl;
+     std::cout << "" << std::endl;
 
-     cout << "Calculation of the triangle's perimeter:" << endl;
-     cout << "" << endl;
-     cout << "P = AB + BC + AC = " << ab << " + " << bc << " + " << ac << " = " << p << endl;
+     std::cout << "Calculation of the triangle's perimeter:" << std::endl;
+     std::cout << "" << std::endl;
+     std::cout << "P = AB + BC + AC = " << ab << " + " << bc << " + " << ac << " = " << p << std::endl;
 
-     cout << "" << endl;
-     cout << "" << endl;
-     cout << "" << endl;
+     std::cout << "" << std::endl;
+     std::cout << "" << std::endl;
+     std::cout << "" << std::endl;
 
-     cout << "Calculation of the triangle's area using Heron's Theorem:" << endl;
-     cout << "SP = semi perimeter" << endl;
-     cout << "" << endl;
-     cout << "A = sqrt[SP*(SP-AB)*(SP-BC)*(SP-AC)] = " << "sqrt[" << sp << "*" << "(" << sp << "-" << ab << ")" << "*" << "(" << sp << "-" << bc << ")" << "*" << "(" << sp << "-" << ac << ")" << "]" << " = " << "sqrt(" << sp << "*" << sp-ab << "*" << sp-bc << "*" << sp-ac << ")" << " = " << "sqrt(" << sp*(sp-ab)*(sp-bc)*(sp-ac) << ")" << " = " << sqrt(sp*(sp-ab)*(sp-bc)*(sp-ac)) << endl;
+     std::cout << "Calculation of the triangle's area using Heron's Theorem:" << std::endl;
+     std::cout << "SP = semi perimeter" << std::endl;
+     std::cout << "" << std::endl;
+     std::cout << "A = sqrt[SP*(SP-AB)*(SP-BC)*(SP-AC)] = " << "sqrt[" << sp << "*" << "(" << sp << "-" << ab << ")" << "*" << "(" << sp << "-" << bc << ")" << "*" << "(" << sp << "-" << ac << ")" << "]" << " = " << "sqrt(" << sp << "*" << sp-ab << "*" << sp-bc << "*" << sp-ac << ")" << " = " << "sqrt(" << sp*(sp-ab)*(sp-bc)*(sp-ac) << ")" << " = " << sqrt(sp*(sp-ab)*(sp-bc)*(sp-ac)) << std::endl;
 
-     cout << "" << endl;
-     cout << "" << endl;
-     cout << "" << endl;
+     std::cout << "" << std::endl;
+     std::cout << "" << std::endl;
+     std::cout << "" << std::endl;
     }
 
-    cout << "Press the 'X' button to close the program." << endl;
+    std::cout << "Press the 'X' button to close the program." << std::endl;
 
     while (true)
     {
-        cin.get();
+        std::cin.get();
     }
 
     return 0;
