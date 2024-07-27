@@ -17,6 +17,7 @@
 
     This is because the program was written to make only "yes/Yes/YES" valid.
 
+
 If you experience any other issues, please submit an issue [here](https://github.com/Kevin4e/CartesianPlane-Triangle/issues).
     
     
