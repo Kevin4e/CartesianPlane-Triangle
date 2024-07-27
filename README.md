@@ -14,7 +14,6 @@
 
 ## Troubleshooting
  1. **When I confirm to see the process the program will end without showing it.**
-
     This is because the program was written to make only "yes/Yes/YES" valid.
     
     
